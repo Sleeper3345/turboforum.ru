@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url(/assets/files/main.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.main {
+    border: 5px solid red;
+    margin-left: 30%;
+    width: 40%;
+    background: #fc0;
+    padding: 10px;
+    text-align: center;
+}
+
+.theme {
+    border: 5px solid red;
+    margin-left: 0%;
+    width: 100%;
+    background: #fc0;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.com_text {
+    width: 1000px;
+    height: 200px;
+    resize: none;
+}
+
+table {
+    color: #333;
+    font-family: sans-serif;
+    font-size: .9em;
+    font-weight: 300;
+    text-align: left;
+    line-height: 40px;
+    border-spacing: 0;
+    border: 2px solid #2b0097;
+    width: 1000px;
+    margin: 50px auto;
+}
+
+thead tr:first-child {
+    background: #4c0597;
+    color: #fff;
+    border: none;
+}
+
+th {font-weight: bold;}
+th:first-child, td:first-child {padding: 0 15px 0 20px;}
+
+thead tr:last-child th {border-bottom: 3px solid #ddd;}
+
+tbody tr:hover {background-color: #ffeeff;}
+tbody tr:last-child td {border: none;}
+tbody td {border-bottom: 1px solid #ddd;}
+
+td:last-child {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.button {
+    color: #696969;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.alterar:hover {
+    color: #0a79df;
+}
+
+.excluir:hover {
+    color: #dc2a2a;
+}
+
+div#main {
+    color: #1b6d85;
+}
+
+.container {
+    position: relative;
+    min-height: 100%;
+}
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+
+div#chat {
+    position:absolute;
+    left:50%;
+    top:40%;
+    margin-left:-400px;
+    margin-top:-200px;
+}
+
+div#chat #chat_head {
+    height:25px;
+    width:800px;
+    background-color:black;
+}
+
+div#chat #chat_body {
+    height:400px;
+    width:800px;
+    background-color: #393939;
+    overflow-y: scroll;
+}
+
+div#chat_head span {
+    color:white;
+}
+
+div#chat_body span {
+    display:block;
+    color:white;
+    padding:0 3px;
+}
+
+div#chat #send_message .input_text {
+    background-color:black;
+    color:white;
+    width:600px;
+}
+
+div#chat #send_message .dis {
+    color:#2b542c;
+}
+
+div#chat .send {
+    padding:3px;
+    background:rgba(0, 0, 0, 0);
+    color: #000000; border:2px solid #6b6b6b;
+    border-radius:5px;
+    margin:auto;
+    width:200px;
+}
+
+#rating_comment {
+    padding:1px;
+    width:200px;
+}
+
+.plus_minus {
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+tr {
+    background-color: #c1ccc5;
+}
+
+.add_theme {
+    border: 5px solid red;
+    margin: 0 auto;
+    width: 90%;
+    background: #fc0;
+    padding: 10px;
+    text-align: center;
+}
+
+.theme_name {
+    width: 1000px;
+}

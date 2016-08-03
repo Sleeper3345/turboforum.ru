@@ -1,0 +1,1 @@
+'News has been created!'
