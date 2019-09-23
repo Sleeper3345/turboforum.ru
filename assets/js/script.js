@@ -59,7 +59,10 @@ function getMessages() {
     var user_to = parseGetParams();
     setInterval(function() {
         var all_ids = document.getElementsByClassName('message');
-        var last_id = all_ids.item(all_ids.length - 1).valueOf().dataset.id;
+        var last_id = 0;
+        if (all_ids.length > 0) {
+            last_id = all_ids.item(all_ids.length - 1).valueOf().dataset.id;
+        }
         $.ajax({
                 type: "POST",
                 url: "../action/get_last_messages",
