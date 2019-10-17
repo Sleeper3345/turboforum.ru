@@ -1,7 +1,7 @@
 <div class="add_theme">
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('themes/add'); ?>
+<?php echo form_open('../../themes/add'); ?>
 
 <h3>Добавить тему</h3>
 
