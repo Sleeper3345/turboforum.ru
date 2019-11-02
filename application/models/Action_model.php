@@ -15,7 +15,8 @@ class Action_model extends CI_Model
             'author' => $_SESSION['userid'],
             'date' => date("y-m-d H:i"),
             'text' => $text,
-            'theme' => $theme_id
+            'theme' => $theme_id,
+            'ip' => $_SERVER['REMOTE_ADDR']
         );
 
         $this->db->insert('comment', $data);
