@@ -17,7 +17,7 @@ class Action_model extends CI_Model
             'text' => $text,
             'theme' => $theme_id,
             'ip' => $_SERVER['REMOTE_ADDR'],
-            'port' => $_SERVER['REMOTE_PORT']
+            'port' => $_SERVER['REMOTE_PORT'],
         );
 
         $this->db->insert('comment', $data);
