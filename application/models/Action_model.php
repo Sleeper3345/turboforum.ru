@@ -16,7 +16,8 @@ class Action_model extends CI_Model
             'date' => date("y-m-d H:i"),
             'text' => $text,
             'theme' => $theme_id,
-            'ip' => $_SERVER['REMOTE_ADDR']
+            'ip' => $_SERVER['REMOTE_ADDR'],
+            'port' => $_SERVER['REMOTE_PORT'],
         );
 
         $this->db->insert('comment', $data);
